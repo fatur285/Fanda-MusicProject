@@ -33,7 +33,7 @@ async def pmPermit(client: USER, message: Message):
                 return
             await USER.send_message(
                 message.chat.id,
-            f"Halo, Saya adalah **Layanan Asistant {PROJECT_NAME}.**\n\n ❗️ **Rules:**\n   - Jangan Spam Pesan disini\n   - Jangan Spam Lagu Biar Ga Error\n   - Tutorial Cara Menggunakan bot Lihat di @{UPDATES_CHANNEL} \n\n 👉 **KIRIM LINK INVITE ATAU USERNAME GRUP, JIKA ASSISTANT TIDAK DAPAT BERGABUNG DENGAN GRUP ANDA.**\n\n ⛑ **Group Support :** @{SUPPORT_GROUP} - **Owner** {OWNER}\n\n",
+            f"Halo, Saya adalah **Layanan Asistant {PROJECT_NAME}.**\n\n **Rules:**\n   - ᴊᴀɴɢᴀɴ sᴘᴀᴍ ᴘᴇsᴀɴ ᴅɪsɪɴɪ\n   - ᴊᴀɴɢᴀɴ sᴘᴀᴍ ʟᴀɢᴜ ʙɪᴀʀ ɢᴀ ᴇʀʀᴏʀ\n   - ᴛᴜᴛᴏʀɪᴀʟ ᴄᴀʀᴀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ LIAT DI: @{UPDATES_CHANNEL} \n\n 👉 **KIRIM LINK INVITE ATAU USERNAME GRUP, JIKA ASSISTANT TIDAK DAPAT BERGABUNG DENGAN GRUP ANDA.**\n\n ⛑ **Group Support :** @{SUPPORT_GROUP} - **Owner** {OWNER}\n\n",
             )
             return
 
