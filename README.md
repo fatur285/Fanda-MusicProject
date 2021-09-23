@@ -4,7 +4,7 @@
 ### Tersedia di telegram sebagai [FANDA MUSIK🎧](https://t.me/FandaMusicbot)
 
 <p align="center">
-  <img src="https://telegra.ph/file/9c33051aae30b996e0ca4.jpg">
+  <img src="https://telegra.ph/file/f8552a79c66717ecbf2db.jpg">
 </p>
 <h2> Features </h2>
 
