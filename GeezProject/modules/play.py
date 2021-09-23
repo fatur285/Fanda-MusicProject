@@ -136,7 +136,7 @@ async def playlist(client, message):
         temp.append(t)
     now_playing = temp[0][0]
     by = temp[0][1].mention(style="md")
-    msg = "**Lagu Yang Sedang dimainkan** di {}".format(message.chat.title)
+    msg = "**Lagu Yang Lagi dimainin** di {}".format(message.chat.title)
     msg += "\n• " + now_playing
     msg += "\n• Req by " + by
     temp.pop(0)
@@ -207,7 +207,7 @@ async def ee(client, message):
 @authorized_users_only
 async def settings(client, message):
     if message.chat.id in DISABLED_GROUPS:
-        await message.reply("**Music Player dimatikan**")
+        await message.reply("**Music Player dibunuh**")
         return    
     playing = None
     chat_id = get_chat_id(message.chat)
@@ -264,7 +264,7 @@ async def hfmm(_, message):
         )
     else:
         await message.reply_text(
-            "**Saya hanya mengenali** `/musicplayer on` **dan** `/musicplayer off`"
+            "**Gua cuman kenal sama si** `/musicplayer on` **dan** `/musicplayer off`"
         )    
         
 
@@ -285,7 +285,7 @@ async def p_cb(b, cb):
             temp.append(t)
         now_playing = temp[0][0]
         by = temp[0][1].mention(style="md")
-        msg = "**Lagu Yang Sedang dimainkan** di {}".format(cb.message.chat.title)
+        msg = "**Lagu Yang Lagi dimainin** di {}".format(cb.message.chat.title)
         msg += "\n• " + now_playing
         msg += "\n• Req by " + by
         temp.pop(0)
@@ -353,7 +353,7 @@ async def m_cb(b, cb):
             temp.append(t)
         now_playing = temp[0][0]
         by = temp[0][1].mention(style="md")
-        msg = "**Lagu Yang Sedang dimainkan** di {}".format(cb.message.chat.title)
+        msg = "**Lagu Yang Lagi dimainin** di {}".format(cb.message.chat.title)
         msg += "\n• " + now_playing
         msg += "\n• Req by " + by
         temp.pop(0)
@@ -542,7 +542,7 @@ async def play(_, message: Message):
         )
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/0cf20618faacf8f3b91e0.png"
+        thumb_name = "https://telegra.ph/file/71e63b4ae25a59d8ce571.png"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -584,7 +584,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton("📌 Groups", url="https://t.me/MBsokin"),
                     InlineKeyboardButton("⛑ Channel", url="https://t.me/diorplayingwords"),
                 ],
-                [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
+                [InlineKeyboardButton(text="🗑 Keluar aja lah", callback_data="cls")],
             ]
         )
         requested_by = message.from_user.first_name
@@ -612,7 +612,7 @@ async def play(_, message: Message):
             while j < 5:
                 toxxt += f"{emojilist[j]} [{results[j]['title'][:25]}](https://youtube.com{results[j]['url_suffix']})\n"
                 toxxt += f" ├ 💡 **Duration** - {results[j]['duration']}\n"
-                toxxt += f" └ ⚡ __Powered by Geez Music Project__\n\n"
+                toxxt += f" └ ⚡ __Powered by Fanda Music Project__\n\n"
 
                 j += 1            
             koyboard = InlineKeyboardMarkup(
@@ -737,7 +737,7 @@ async def ytplay(_, message: Message):
                     invitelink = await _.export_chat_invite_link(chid)
                 except:
                     await lel.edit(
-                        "<b>Tambahkan saya sebagai admin grup Anda terlebih dahulu</b>",
+                        "<b>Jadiin gua CEO dulu</b>",
                     )
                     return
 
@@ -924,7 +924,7 @@ async def deezer(client: Client, message_: Message):
         url = songs.result[0].url
         artist = songs.result[0].artist
         duration = songs.result[0].duration
-        thumbnail = "https://telegra.ph/file/0cf20618faacf8f3b91e0.png"
+        thumbnail = "https://telegra.ph/file/71e63b4ae25a59d8ce571.png"
 
     except:
         await res.edit("**Tidak Ditemukan Lagu Apa Pun!**")
