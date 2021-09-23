@@ -1,8 +1,7 @@
-<h1 align="centre">🎵 Geez Music Projects 🎵</h1>
+<h1 align="centre">🎵 Fanda Music Projects 🎵</h1>
 
-### A bot that can play music on Telegram Group and Channel Voice Chats
-#### POWERED BY [PYTGCALLS](https://github.com/pytgcalls/pytgcalls)
-### Available on telegram as [@GeezMusicBot](https://t.me/GeezMusicBot)
+### Bot yang dapat memutar musik di Grup Telegram dan Obrolan Suara Saluran
+### Tersedia di telegram sebagai [FANDA MUSIK🎧](https://t.me/FandaMusicbot)
 
 <p align="center">
   <img src="https://telegra.ph/file/9c33051aae30b996e0ca4.jpg">
@@ -35,12 +34,12 @@ $ npm i -g npm
 $ python(3) -m GeezProject
 ```
 
-### 💜 Heroku
+### Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/vckyou/Geez-MusicProject/tree/master)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DIORrios285/Fanda-MusicProject)
 
 Get pyrogram (p)  `SESSION` from here:
-[![Run on Repl.it](https://repl.it/badge/github/vckyou/PyrogramString)](https://repl.it/@vckyou/PyrogramString?lite=1&outputonly=1)
+[![Run on Repl.it](https://repl.it/badge/github/DIORrios285/PyrogramString)](https://replit.com/@DIORrios285/DIORPyrogramString?lite=1&outputonly=1)
 
 ### Commands for Group 🛠
 #### For all in group
@@ -79,8 +78,8 @@ Don't edit this part
 #### Special Credits
 - [Rojserbest](http://github.com/rojserbes): Callsmusic Developer
 
-This bot is based on the original work done by [Rojserbest](http://github.com/rojserbest). Without his hardwork Geez Music won't exist. 
-Geez-Project is a modified version of [Callsmusic](https://github.com/callsmusic/callsmusic)
+This bot is based on the original work done by [Rojserbest](http://github.com/rojserbest). Without his hardwork Fanda Music won't exist. 
+Fanda-Project is a modified version of [Callsmusic](https://github.com/callsmusic/callsmusic)
 
 #### Contribtors
 - [Vicky](https://github.com/Vckyou): Dev
