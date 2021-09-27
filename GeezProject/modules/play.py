@@ -612,7 +612,7 @@ async def play(_, message: Message):
             while j < 5:
                 toxxt += f"{emojilist[j]} [{results[j]['title'][:25]}](https://youtube.com{results[j]['url_suffix']})\n"
                 toxxt += f" ├ 💡 **Duration** - {results[j]['duration']}\n"
-                toxxt += f" └ ⚡ __Powered by Fanda Music Project__\n\n"
+                toxxt += f" └ ⚡ __Powered by Fanda Project__\n\n"
 
                 j += 1            
             koyboard = InlineKeyboardMarkup(
@@ -905,7 +905,7 @@ async def deezer(client: Client, message_: Message):
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i>{user.first_name} terkena banned dari Grup ini, Minta admin untuk mengirim perintah `/play` untuk pertama kalinya atau tambahkan @{ASSISTANT_NAME} secara manual</i>"
+            f"<i>{user.first_name} dibanned dari ni gc, Minta admin untuk mengirim perintah `/play` buat pertama kalinya atau tambahin @{ASSISTANT_NAME} secara manual</i>"
         )
         return
     requested_by = message_.from_user.first_name
@@ -939,7 +939,7 @@ async def deezer(client: Client, message_: Message):
     
     keyboard = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton(text="⛑ Channel", url="https://t.me/GeezProjects")],
+            [InlineKeyboardButton(text="⛑ Channel", url="https://t.me/fandaproject")],
         ]
     )
     file_path = await convert(wget.download(url))
