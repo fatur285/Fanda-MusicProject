@@ -650,7 +650,7 @@ async def play(_, message: Message):
 
             except Exception as e:
                 await lel.edit(
-                "**Kaga ada lagunya.** Coba cari dengan judul lagu yang lebih jelas, Ketik `/help` bila butuh bantuan"
+                "**Buset ga nemu lagunya.** Coba cari dengan judul lagu yang lebih jelas, Ketik `/help` bila butuh bantuan"
             )
                 print(str(e))
                 return
@@ -679,7 +679,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption = f"🏷 **Judul:** [{title[:30]}]({url})\n⏱ **Durasi:** {duration}\n💡 **Status:** Antrian Ke `{position}`\n" \
+            caption = f"🏷 **Judul:** [{title[:30]}]({url})\n⏱ **Durasi:** {duration}\n💡 **Status:** Antrian bansos Ke `{position}`\n" \
                     + f"🎧 **Permintaan si kontol ini:** {message.from_user.mention}",
                    reply_markup=keyboard)
        
@@ -699,7 +699,7 @@ async def play(_, message: Message):
             return
         await message.reply_photo(
             photo="final.png",
-            caption = f"🏷 **Judul:** [{title[:30]}]({url})\n⏱ **Durasi:** {duration}\n💡 **Status:** Sedang Memutar\n" \
+            caption = f"🏷 **Judul:** [{title[:30]}]({url})\n⏱ **Durasi:** {duration}\n💡 **Status:** Lagi muterin lagu\n" \
                     + f"🎧 **Permintaan si kontol ini:** {message.from_user.mention}",
                    reply_markup=keyboard)
 
@@ -744,7 +744,7 @@ async def ytplay(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "I joined this group for playing music in VC"
+                        message.chat.id, "Gua Join Gc Lu Buat Muterin Lagu Di VCG/OS Yeh Anjing, Jangan Dengerin BD Bangsat!!"
                     )
                     await lel.edit(
                         "<b>helper userbot joined your chat</b>",
@@ -763,10 +763,10 @@ async def ytplay(_, message: Message):
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i>{user.first_name} terkena banned dari Grup ini, Minta admin untuk mengirim perintah `/play` untuk pertama kalinya atau tambahkan @{ASSISTANT_NAME} secara manual</i>"
+            f"<i>{user.first_name} dibanned dari ni gc bego, Minta admin lu buat send perintah `/play` buat pertama kalinya atau tambahin @{ASSISTANT_NAME} secara manual</i>"
         )
         return
-    await lel.edit("🧐 **mana ya lagunya**")
+    await lel.edit("🧐 **mana sih lagunya**")
     user_id = message.from_user.id
     user_name = message.from_user.first_name
      
@@ -792,7 +792,7 @@ async def ytplay(_, message: Message):
 
     except Exception as e:
         await lel.edit(
-            "**Kaga ada lagunya.** Coba cari dengan judul lagu yang lebih jelas, Ketik `/help` bila butuh bantuan"
+            "**Busehh ga nemu lagunya.** Coba cari dengan judul lagu yang lebih jelas, Ketik `/help` bila butuh bantuan"
         )
         print(str(e))
         return
@@ -821,7 +821,7 @@ async def ytplay(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
             photo="final.png",
-            caption = f"🏷 **Judul:** [{title[:30]}]({url})\n⏱ **Durasi:** {duration}\n💡 **Status:** Antrian Ke `{position}`\n" \
+            caption = f"🏷 **Judul:** [{title[:30]}]({url})\n⏱ **Durasi:** {duration}\n💡 **Status:** antrian bansos Ke `{position}`\n" \
                     + f"🎧 **Permintaan si kontol ini:** {message.from_user.mention}",
                    reply_markup=keyboard,
         )
@@ -843,7 +843,7 @@ async def ytplay(_, message: Message):
             return
         await message.reply_photo(
             photo="final.png",
-            caption = f"🏷 **Judul:** [{title[:30]}]({url})\n⏱ **Durasi:** {duration}\n💡 **Status:** Sedang Memutar\n" \
+            caption = f"🏷 **Judul:** [{title[:30]}]({url})\n⏱ **Durasi:** {duration}\n💡 **Status:** Lagi muter\n" \
                     + f"🎧 **Permintaan si kontol ini:** {message.from_user.mention}",
                    reply_markup=keyboard,)
         os.remove("final.png")
@@ -886,7 +886,7 @@ async def deezer(client: Client, message_: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message_.chat.id, "I joined this group for playing music in VC"
+                        message_.chat.id, "Gua Join Gc Lu Buat Muterin Lagu Di VCG/OS Yeh Anjing, Jangan Dengerin BD Bangsat!!!"
                     )
                     await lel.edit(
                         "<b>helper userbot joined your chat</b>",
@@ -905,7 +905,7 @@ async def deezer(client: Client, message_: Message):
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i>{user.first_name} dibanned dari ni gc, Minta admin untuk mengirim perintah `/play` buat pertama kalinya atau tambahin @{ASSISTANT_NAME} secara manual</i>"
+            f"<i>{user.first_name} dibanned dari ni gc, Minta admin lu send perintah `/play` buat pertama kalinya atau tambahin @{ASSISTANT_NAME} secara manual</i>"
         )
         return
     requested_by = message_.from_user.first_name
@@ -914,7 +914,7 @@ async def deezer(client: Client, message_: Message):
     queryy = text[1]
     query = queryy
     res = lel
-    await res.edit(f"**Sedang Mencari Lagu** `{query}` **dari deezer**")
+    await res.edit(f"**Lagi nyari lagu** `{query}` **dari deezer**")
     try:
         songs = await arq.deezer(query,1)
         if not songs.ok:
@@ -927,7 +927,7 @@ async def deezer(client: Client, message_: Message):
         thumbnail = "https://telegra.ph/file/d908e8375c423fd0dcf7c.jpg"
 
     except:
-        await res.edit("**Lagu apaansi kok ga ketemu!?**")
+        await res.edit("**Lagu apaansi kok ga ketemu?**")
         return
     try:    
         duuration= round(duration / 60)
@@ -955,7 +955,7 @@ async def deezer(client: Client, message_: Message):
         loc = file_path
         appendable = [s_name, r_by, loc]
         qeue.append(appendable)
-        await res.edit_text(f"🎼 **Lagu yg lu minta lagi ngantri di posisi** `{position}`")
+        await res.edit_text(f"🎼 **Lagu yg lu minta lagi ngantri bansos di posisi** `{position}`")
     else:
         await res.edit_text(f"🎼️ **Mabar...**")
 
@@ -978,7 +978,7 @@ async def deezer(client: Client, message_: Message):
         chat_id=message_.chat.id,
         reply_markup=keyboard,
         photo="final.png",
-        caption=f"🎼️ **Sedang Memutar Lagu** [{title}]({url}) **Via Deezer**",
+        caption=f"🎼️ **Lagi muterin lagu** [{title}]({url}) **Via Deezer**",
     )
     os.remove("final.png")
 
@@ -994,7 +994,7 @@ async def lol_cb(b, cb):
     try:
         x,query,useer_id = typed_.split("|")      
     except:
-        await cb.message.edit("Lagu apaansi kok ga ketemu!?")
+        await cb.message.edit("Lagu apaansi kok ga ketemu?")
         return
     useer_id = int(useer_id)
     if cb.from_user.id != useer_id:
@@ -1057,7 +1057,7 @@ async def lol_cb(b, cb):
         await cb.message.delete()
         await b.send_photo(chat_id,
             photo="final.png",
-            caption = f"🏷 **Judul:** [{title[:30]}]({url})\n⏱ **Durasi:** {duration}\n💡 **Status:** Antrian Ke `{position}`\n" \
+            caption = f"🏷 **Judul:** [{title[:30]}]({url})\n⏱ **Durasi:** {duration}\n💡 **Status:** Antrian bansos Ke `{position}`\n" \
                     + f"🎧 **Permintaan si kontol ini:** {r_by.mention}",
                    reply_markup=keyboard,
         )
@@ -1079,7 +1079,7 @@ async def lol_cb(b, cb):
         await cb.message.delete()
         await b.send_photo(chat_id,
             photo="final.png",
-            caption = f"🏷 **Judul:** [{title[:30]}]({url})\n⏱ **Durasi:** {duration}\n💡 **Status:** Sedang Memutar\n" \
+            caption = f"🏷 **Judul:** [{title[:30]}]({url})\n⏱ **Durasi:** {duration}\n💡 **Status:** Lagi muter\n" \
                     + f"🎧 **Permintaan si kontol ini:** {r_by.mention}",
                     reply_markup=keyboard,
         )
