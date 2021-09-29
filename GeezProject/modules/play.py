@@ -542,7 +542,7 @@ async def play(_, message: Message):
         )
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/d908e8375c423fd0dcf7c.jpg"
+        thumb_name = "https://telegra.ph/file/a78d27264ba7003f89df2.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -611,7 +611,7 @@ async def play(_, message: Message):
 
             while j < 5:
                 toxxt += f"{emojilist[j]} [{results[j]['title'][:25]}](https://youtube.com{results[j]['url_suffix']})\n"
-                toxxt += f" ├ 💡 **Duration** - {results[j]['duration']}\n"
+                toxxt += f" ├ 💡 **Durasi ngentot** - {results[j]['duration']}\n"
                 toxxt += f" └ ⚡ __Powered by Fanda Project__\n\n"
 
                 j += 1            
@@ -924,7 +924,7 @@ async def deezer(client: Client, message_: Message):
         url = songs.result[0].url
         artist = songs.result[0].artist
         duration = songs.result[0].duration
-        thumbnail = "https://telegra.ph/file/d908e8375c423fd0dcf7c.jpg"
+        thumbnail = "https://telegra.ph/file/a78d27264ba7003f89df2.jpg"
 
     except:
         await res.edit("**Lagu apaansi kok ga ketemu?**")
