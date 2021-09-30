@@ -39,7 +39,7 @@ async def update_admin(client, message: Message):
             for member in await message.chat.get_members(filter="administrators")
         ],
     )
-    await message.reply_text("❇️ Admin cache refreshed!")
+    await message.reply_text("❇️ etmin cache seger kek dulu!")
 
 
 @Client.on_message(command("pause") & other_filters)
@@ -50,10 +50,10 @@ async def pause(_, message: Message):
     if (chat_id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[chat_id] == "paused"
     ):
-        await message.reply_text("❗ Lagi nganggur bre!")
+        await message.reply_text("❗ Apaan yg mau di istirahatin, Emak lu?")
     else:
         callsmusic.pytgcalls.pause_stream(chat_id)
-        await message.reply_text("▶️ Berenti bentar bre!")
+        await message.reply_text("▶️ Istirahat bentar nyet!")
 
 
 @Client.on_message(command("resume") & other_filters)
@@ -64,10 +64,10 @@ async def resume(_, message: Message):
     if (chat_id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[chat_id] == "playing"
     ):
-        await message.reply_text("❗ Apaan yg mau di berentiin?")
+        await message.reply_text("❗ Apaan yg mau di lanjutin?")
     else:
         callsmusic.pytgcalls.resume_stream(chat_id)
-        await message.reply_text("⏸ OKE LANJUT!!!")
+        await message.reply_text("⏸ OKE, LANJOOTTT!!!")
 
 
 @Client.on_message(command("end") & other_filters)
@@ -94,7 +94,7 @@ async def skip(_, message: Message):
     global que
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ Apaan yg mau diskip anjing!?")
+        await message.reply_text("❗ Apaan yg mau diskip anjing, nyawa bapak lu?")
     else:
         callsmusic.queues.task_done(chat_id)
 
@@ -110,7 +110,7 @@ async def skip(_, message: Message):
         skip = qeue.pop(0)
     if not qeue:
         return
-    await message.reply_text(f"- Skip lagunya jelek **{skip[0]}**\n- Nah ini baru enak lagunya **{qeue[0][0]}**")
+    await message.reply_text(f"- Skip lagu apaansi jelek banget **{skip[0]}**\n- Nah ni baru enak lagunya **{qeue[0][0]}**")
 
 
 @Client.on_message(filters.command("admincache"))
@@ -123,4 +123,4 @@ async def admincache(client, message: Message):
             for member in await message.chat.get_members(filter="administrators")
         ],
     )
-    await message.reply_text("✅️ **Daftar admin** udah **diperbarui nyet**")
+    await message.reply_text("✅️ **Daftar etmin udah diperbarui nyet**")
