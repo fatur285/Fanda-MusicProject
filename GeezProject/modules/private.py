@@ -144,12 +144,12 @@ async def start(client: Client, message: Message):
 )
 async def help(client: Client, message: Message):
     await message.reply_text(
-        """**Teken tombol di bawah ini biar tau cara make gua**""",
+        """**Teken tombol di bawah ini biar lu tau cara make gua**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "📜 Cara make gua 📜", url="https://telegra.ph/CCARA-PAKE-FANDA-MUSIC-BOT-09-30/32"
+                        "📜 Cara make gua 📜", url="https://telegra.ph/CCARA-PAKE-FANDA-MUSIC-BOT-09-30"
                     )
                 ]
             ]
@@ -163,7 +163,7 @@ async def help(client: Client, message: Message):
     & ~ filters.edited
 )
 async def reload(client: Client, message: Message):
-    await message.reply_text("""✅ Bot **udah dimulai ulang!**\n\n• **Daftar etmin udah diperbarui nyet**""",
+    await message.reply_text("""**✅ Bot udah dimulai ulang!**\n\n• **Daftar etmin udah diperbarui nyet**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -171,7 +171,7 @@ async def reload(client: Client, message: Message):
                         "Join gc gua yuk", url=f"https://t.me/MBsokin"
                     ),
                     InlineKeyboardButton(
-                        "Yg buat gua", url=f"https://t.me/uurfavboys1"
+                        "yg buat gua", url=f"https://t.me/uurfavboys1"
                     )
                 ]
             ]
