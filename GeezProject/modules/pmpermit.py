@@ -33,7 +33,7 @@ async def pmPermit(client: USER, message: Message):
                 return
             await USER.send_message(
                 message.chat.id,
-            f"Halo nyet, Gua adalah **Layanan Asistant {PROJECT_NAME}.**\n\n **Rules:**\n   - ᴊᴀɴɢᴀɴ sᴘᴀᴍ ᴘᴇsᴀɴ ᴅɪsɪɴɪ\n   - ᴊᴀɴɢᴀɴ sᴘᴀᴍ ʟᴀɢᴜ ʙɪᴀʀ ɢᴀ ᴇʀʀᴏʀ\n   - ᴛᴜᴛᴏʀɪᴀʟ ᴄᴀʀᴀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ LIAT DI: @{UPDATES_CHANNEL} \n\n 👉 **KIRIM LINK INVITE ATAU USERNAME GRUP, JIKA ASSISTANT TIDAK DAPAT BERGABUNG DENGAN GRUP ANDA.**\n\n ⛑ **Group Support :** @{SUPPORT_GROUP} - **Owner** {OWNER}\n\n",
+            f"**Halo nyet, Gua adalah Layanan Asistant {PROJECT_NAME}.**\n\n **Rules:**\n   - ᴊᴀɴɢᴀɴ sᴘᴀᴍ ᴘᴇsᴀɴ ᴅɪsɪɴɪ\n   - ᴊᴀɴɢᴀɴ sᴘᴀᴍ ʟᴀɢᴜ ʙɪᴀʀ ɢᴀ ᴇʀʀᴏʀ\n   - ᴛᴜᴛᴏʀɪᴀʟ ᴄᴀʀᴀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ LIAT DI: @{UPDATES_CHANNEL} \n\n 👉 **KIRIM LINK INVITE ATAU USERNAME GRUP, JIKA ASSISTANT TIDAK DAPAT BERGABUNG DENGAN GRUP ANDA.**\n\n ⛑ **Group Support :** @{SUPPORT_GROUP} - **Owner** {OWNER}\n\n",
             )
             return
 
@@ -47,11 +47,11 @@ async def bye(client: Client, message: Message):
         queryy = text[1]
         if queryy == "on":
             PMSET = True
-            await message.reply_text("Pmpermit turned on")
+            await message.reply_text("Pmpermit gua idupin")
             return
         if queryy == "off":
             PMSET = None
-            await message.reply_text("Pmpermit turned off")
+            await message.reply_text("Pmpermit gua matiin")
             return
 
 @USER.on_message(filters.text & filters.private & filters.me)        
