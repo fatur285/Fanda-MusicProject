@@ -185,7 +185,7 @@ def r_ply(type_):
             [
                 InlineKeyboardButton("📖 Playlist", "playlist"),
             ],
-            [InlineKeyboardButton("🗑 Keluar aja lah", "cls")],
+            [InlineKeyboardButton("🗑 Keluar be lah", "cls")],
         ]
     )
     return mar
@@ -402,7 +402,7 @@ async def m_cb(b, cb):
                 [
                     InlineKeyboardButton("📖 Daftar putar", "playlist"),
                 ],
-                [InlineKeyboardButton("🗑️ Keluar aja lah", "cls")],
+                [InlineKeyboardButton("🗑️ Keluar be lah", "cls")],
             ]
         )
         await cb.message.edit(stats, reply_markup=marr)
@@ -447,7 +447,7 @@ async def play(_, message: Message):
     global useer
     if message.chat.id in DISABLED_GROUPS:
         return    
-    lel = await message.reply("⏳ **Sabar lagi proses ngocok**")
+    lel = await message.reply("⏳ **Sabar lagi ngocok**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
@@ -537,7 +537,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton("⚔️ Groups", url="https://t.me/MBsokin"),
                     InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
                 ],
-                [InlineKeyboardButton(text="🚪 Keluar aja lah", callback_data="cls")],
+                [InlineKeyboardButton(text="🚪 Keluar be lah", callback_data="cls")],
             ]
         )
         file_name = get_file_name(audio)
@@ -555,7 +555,7 @@ async def play(_, message: Message):
         )
     elif urls:
         query = toxt
-        await lel.edit("⏳ **Sabar lagi proses ngocok**")
+        await lel.edit("⏳ **Sabar lagi ngocok**")
         ydl_opts = {"format": "bestaudio[ext=m4a]"}
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
@@ -584,7 +584,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton("⚔️ Groups", url="https://t.me/MBsokin"),
                     InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
                 ],
-                [InlineKeyboardButton(text="🚪 Keluar aja lah", callback_data="cls")],
+                [InlineKeyboardButton(text="🚪 Keluar be lah", callback_data="cls")],
             ]
         )
         requested_by = message.from_user.first_name
@@ -595,7 +595,7 @@ async def play(_, message: Message):
         for i in message.command[1:]:
             query += " " + str(i)
         print(query)
-        await lel.edit("⏳ **Sabar lagi proses ngocok**")
+        await lel.edit("⏳ **Sabar lagi ngocok**")
         ydl_opts = {"format": "bestaudio[ext=m4a]"}
         
         try:
@@ -662,7 +662,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton("⚔️ Groups", url="https://t.me/MBsokin"),
                     InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
                 ],
-                [InlineKeyboardButton(text="🚪 Keluar aja lah", callback_data="cls")],
+                [InlineKeyboardButton(text="🚪 Keluar be lah", callback_data="cls")],
             ]
         )
             requested_by = message.from_user.first_name
@@ -712,7 +712,7 @@ async def ytplay(_, message: Message):
     global que
     if message.chat.id in DISABLED_GROUPS:
         return
-    lel = await message.reply("⏳ **Sabar lagi proses ngocok**")
+    lel = await message.reply("⏳ **Sabar lagi ngocok**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
@@ -775,7 +775,7 @@ async def ytplay(_, message: Message):
     for i in message.command[1:]:
         query += " " + str(i)
     print(query)
-    await lel.edit("⏳ **Lagi proses ngocok**")
+    await lel.edit("⏳ **Sabar lagi ngocok**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -804,7 +804,7 @@ async def ytplay(_, message: Message):
                     InlineKeyboardButton("⚔️ Groups", url="https://t.me/MBsokin"),
                     InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
                 ],
-                [InlineKeyboardButton(text="🚪 Keluar aja lah", callback_data="cls")],
+                [InlineKeyboardButton(text="🚪 Keluar be lah", callback_data="cls")],
             ]
         )
     requested_by = message.from_user.first_name
@@ -855,7 +855,7 @@ async def deezer(client: Client, message_: Message):
     if message_.chat.id in DISABLED_GROUPS:
         return
     global que
-    lel = await message_.reply("⏳ **Lagi proses ngocok**")
+    lel = await message_.reply("⏳ **Sabar lagi ngocok**")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     try:
@@ -1037,7 +1037,7 @@ async def lol_cb(b, cb):
                     InlineKeyboardButton("⚔️ Groups", url="https://t.me/MBsokin"),
                     InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
                 ],
-                [InlineKeyboardButton(text="🚪 Keluar aja lah", callback_data="cls")],
+                [InlineKeyboardButton(text="🚪 Keluar be lah", callback_data="cls")],
             ]
         )
     requested_by = useer_name
