@@ -64,7 +64,7 @@ async def resume(_, message: Message):
     if (chat_id not in callsmusic.pytgcalls.active_calls) or (
         callsmusic.pytgcalls.active_calls[chat_id] == "playing"
     ):
-        await message.reply_text("❗ Apaan yg mau di lanjutin?")
+        await message.reply_text("❗ Apaan yg mau di lanjutin,..siksa kubur bapak lu?")
     else:
         callsmusic.pytgcalls.resume_stream(chat_id)
         await message.reply_text("⏸ OKE, LANJOOTTT!!!")
@@ -76,7 +76,7 @@ async def resume(_, message: Message):
 async def stop(_, message: Message):
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.pytgcalls.active_calls:
-        await message.reply_text("❗ Ga ada lagu yg lagi dimainin bre!")
+        await message.reply_text("❗ Ga ada lagu yg lagi dimainin jelek!")
     else:
         try:
             callsmusic.queues.clear(chat_id)
@@ -84,7 +84,7 @@ async def stop(_, message: Message):
             pass
 
         callsmusic.pytgcalls.leave_group_call(chat_id)
-        await message.reply_text("❌ anjing lu yeh dari tadi gua minta istirahat, kontol lu!")
+        await message.reply_text("❌ Anjing dari tadi gua minta istirahat kaga didengerin ngentot, kontol lu!")
 
 
 @Client.on_message(command("skip") & other_filters)
@@ -123,4 +123,4 @@ async def admincache(client, message: Message):
             for member in await message.chat.get_members(filter="administrators")
         ],
     )
-    await message.reply_text("✅️ **Daftar etmin udah diperbarui nyet**")
+    await message.reply_text("✅️ **Daftar etmin** udah **diperbarui nyet**")
