@@ -51,15 +51,15 @@ Mau masukin gua ke gc lu? Masukin gua ke gc lu!
                         "➕ Masukin gua ke gc lu ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "🛰️ Channel informasi", url=f"https://t.me/{UPDATES_CHANNEL}"), 
+                        "📢 Channel informasi", url=f"https://t.me/{UPDATES_CHANNEL}"), 
                     InlineKeyboardButton(
-                        "🎯 Group Support", url=f"https://t.me/{SUPPORT_GROUP}")
+                        "⚔️ Group Support", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
                     InlineKeyboardButton(
                         "🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")
                 ],[
                     InlineKeyboardButton(
-                        "🎁 Donasi", url=f"https://t.me/uurfavboys1")
+                        "💳 Donasi", url=f"https://t.me/uurfavboys1")
                 ]
             ]
         ),
@@ -99,8 +99,8 @@ def map(pos):
         url = f"https://t.me/{SUPPORT_GROUP}"
         button = [
             [InlineKeyboardButton("➕ Masukin gua ke gc lu ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-            [InlineKeyboardButton(text = '🛰️ Channel informasi', url=f"https://t.me/{UPDATES_CHANNEL}"),
-             InlineKeyboardButton(text = '🎯 Group Support', url=f"https://t.me/{SUPPORT_GROUP}")],
+            [InlineKeyboardButton(text = '📢 Channel informasi', url=f"https://t.me/{UPDATES_CHANNEL}"),
+             InlineKeyboardButton(text = '⚔️ Group Support', url=f"https://t.me/{SUPPORT_GROUP}")],
             [InlineKeyboardButton(text = '🛠 Source Code 🛠', url=f"https://{SOURCE_CODE}")],
             [InlineKeyboardButton(text = '«', callback_data = f"help+{pos-1}")]
         ]
@@ -163,7 +163,7 @@ async def help(client: Client, message: Message):
     & ~ filters.edited
 )
 async def reload(client: Client, message: Message):
-    await message.reply_text("""**✅ Bot udah dimulai ulang!**\n\n• **Daftar etmin udah diperbarui nyet**""",
+    await message.reply_text("""✅ Bot **udah dimulai ulang!**\n\n• **Daftar etmin** udah **diperbarui nyet**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
