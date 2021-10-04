@@ -1,10 +1,10 @@
 <h1 align="centre">🎵 Fanda Music Projects 🎵</h1>
 
 ### Bot yang dapat memutar musik di Grup Telegram dan Obrolan Suara Saluran
-### Tersedia di telegram sebagai [FANDA MUSIK🎧](https://t.me/FandaMusicbot)
+### Tersedia di telegram sebagai [FANDA MUSIK V2](https://t.me/fandamusikrobot)
 
 <p align="center">
-  <img src="https://telegra.ph/file/f8552a79c66717ecbf2db.jpg">
+  <img src="https://telegra.ph/file/012e9a1b5f6ccfa6d129c.jpg">
 </p>
 <h2> Features </h2>
 
