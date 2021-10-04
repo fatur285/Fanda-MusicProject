@@ -142,7 +142,7 @@ async def playlist(client, message):
     temp.pop(0)
     if temp:
         msg += "\n\n"
-        msg += "**Antrian Lagu**"
+        msg += "**Antrian bansos**"
         for song in temp:
             name = song[0]
             usr = song[1].mention(style="md")
@@ -291,7 +291,7 @@ async def p_cb(b, cb):
         temp.pop(0)
         if temp:
             msg += "\n\n"
-            msg += "**Antrian Lagu**"
+            msg += "**Antrian bansos**"
             for song in temp:
                 name = song[0]
                 usr = song[1].mention(style="md")
@@ -402,7 +402,7 @@ async def m_cb(b, cb):
                 [
                     InlineKeyboardButton("📖 Daftar putar", "playlist"),
                 ],
-                [InlineKeyboardButton("🗑️ Keluar be lah", "cls")],
+                [InlineKeyboardButton("🚪 Keluar be lah", "cls")],
             ]
         )
         await cb.message.edit(stats, reply_markup=marr)
@@ -482,7 +482,7 @@ async def play(_, message: Message):
                         message.chat.id, "**Gua Join Gc Lu Buat Muterin Lagu Di VCG/OS Yeh Anjing, Jangan Dengerin BD Bangsat!**"
                     )
                     await lel.edit(
-                        "<b>helper userbot joined your chat</b>",
+                        "<b>helper assisten gua udah join nyet</b>",
                     )
 
                 except UserAlreadyParticipant:
@@ -498,7 +498,7 @@ async def play(_, message: Message):
         # lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i>{user.first_name} Di banned dari ni gc ngentot, Minta lu admin send perintah `/play` buat pertama kalinya atau tambahin @{ASSISTANT_NAME} secara manual</i>"
+            f"<i>{user.first_name} Di banned dari ni gc ngentot, Minta admin lu send perintah `/play` buat pertama kalinya atau tambahin @{ASSISTANT_NAME} secara manual</i>"
         )
         return
     text_links=None
@@ -529,12 +529,12 @@ async def play(_, message: Message):
     if audio:
         if round(audio.duration / 60) > DURATION_LIMIT:
             raise DurationLimitError(
-                f"❌ **Lagu dengan durasi lebih dari** `{DURATION_LIMIT}` **menit ga boleh diputer!**"
+                f"❌ **Lagu yg durasinya kelamaan dari** `{DURATION_LIMIT}` **menit ga boleh diputer!**"
             )
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("⚔️ Groups", url="https://t.me/MBsokin"),
+                    InlineKeyboardButton("⚔️ Groups", url="https://t.me/fandasupport"),
                     InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
                 ],
                 [InlineKeyboardButton(text="🚪 Keluar be lah", callback_data="cls")],
@@ -581,7 +581,7 @@ async def play(_, message: Message):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("⚔️ Groups", url="https://t.me/MBsokin"),
+                    InlineKeyboardButton("⚔️ Groups", url="https://t.me/fandasupport"),
                     InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
                 ],
                 [InlineKeyboardButton(text="🚪 Keluar be lah", callback_data="cls")],
@@ -634,7 +634,7 @@ async def play(_, message: Message):
             return
             # Returning to pornhub
         except:
-            await lel.edit("**Tidak ada hasil yang cukup untuk dipilih.. Mulai bermain langsung..**")
+            await lel.edit("**Apaan kaga ada hasil yg cukup buat di pilih.. Langsung main aja ah..**")
                         
             # print(results)
             try:
@@ -659,7 +659,7 @@ async def play(_, message: Message):
             keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("⚔️ Groups", url="https://t.me/MBsokin"),
+                    InlineKeyboardButton("⚔️ Groups", url="https://t.me/fandasupport"),
                     InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
                 ],
                 [InlineKeyboardButton(text="🚪 Keluar be lah", callback_data="cls")],
@@ -801,7 +801,7 @@ async def ytplay(_, message: Message):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("⚔️ Groups", url="https://t.me/MBsokin"),
+                    InlineKeyboardButton("⚔️ Groups", url="https://t.me/fandasupport"),
                     InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
                 ],
                 [InlineKeyboardButton(text="🚪 Keluar be lah", callback_data="cls")],
@@ -889,7 +889,7 @@ async def deezer(client: Client, message_: Message):
                         message_.chat.id, "Gua Join Gc Lu Buat Muterin Lagu Di VCG/OS Yeh Anjing, Jangan Dengerin BD Bangsat!!!"
                     )
                     await lel.edit(
-                        "<b>helper userbot joined your chat</b>",
+                        "<b>helper assisten gua udah join nyet!</b>",
                     )
 
                 except UserAlreadyParticipant:
@@ -1000,7 +1000,7 @@ async def lol_cb(b, cb):
     if cb.from_user.id != useer_id:
         await cb.answer("Bukan lu yg request jelek!", show_alert=True)
         return
-    await cb.message.edit("**Processing**")
+    await cb.message.edit("⏳ **ngocok bentar**")
     x=int(x)
     try:
         useer_name = cb.message.reply_to_message.from_user.first_name
@@ -1034,16 +1034,16 @@ async def lol_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("▫", "leave"),
-                    InlineKeyboardButton("‣", "puse"),
+                    InlineKeyboardButton("▢", "leave"),
+                    InlineKeyboardButton("▷", "puse"),
                     InlineKeyboardButton("II", "resume"),
-                    InlineKeyboardButton("‣‣I", "skip"),
+                    InlineKeyboardButton("▷▷", "skip"),
                 ],
                 [
                     InlineKeyboardButton("📖 Daftar putar", "playlist"),
                 ],
                 [
-                    InlineKeyboardButton("⚔️ Groups", url="https://t.me/MBsokin"),
+                    InlineKeyboardButton("⚔️ Groups", url="https://t.me/fandasupport"),
                     InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
                 ],
                 [
