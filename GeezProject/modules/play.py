@@ -1034,10 +1034,10 @@ async def lol_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("⏹", "leave"),
-                    InlineKeyboardButton("▶️", "puse"),
-                    InlineKeyboardButton("⏸", "resume"),
-                    InlineKeyboardButton("⏭", "skip"),
+                    InlineKeyboardButton("▫", "leave"),
+                    InlineKeyboardButton("‣", "puse"),
+                    InlineKeyboardButton("II", "resume"),
+                    InlineKeyboardButton("‣‣I", "skip"),
                 ],
                 [
                     InlineKeyboardButton("📖 Daftar putar", "playlist"),
@@ -1047,7 +1047,7 @@ async def lol_cb(b, cb):
                     InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
                 ],
                 [
-                    InlineKeyboardButton("🐼ᴅɪᴏʀ ʟᴀɢɪ ᴄᴀʀɪ sʟɪᴘᴋᴏʟᴀɴ", url="https://t.me/uurfavboys1"),
+                    InlineKeyboardButton("🐼 ᴅɪᴏʀ ʟᴀɢɪ ᴄᴀʀɪ sʟɪᴘᴋᴏʟᴀɴ", url="https://t.me/uurfavboys1"),
                 ],
                 [InlineKeyboardButton(text="🚪 Keluar be lah", callback_data="cls")],
             ]
