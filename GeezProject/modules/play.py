@@ -178,8 +178,8 @@ def r_ply(type_):
         [
             [
                 InlineKeyboardButton("⏹", "leave"),
-                InlineKeyboardButton("⏸", "puse"),
-                InlineKeyboardButton("▶️", "resume"),
+                InlineKeyboardButton("▶️", "puse"),
+                InlineKeyboardButton("⏸", "resume"),
                 InlineKeyboardButton("⏭", "skip"),
             ],
             [
@@ -395,8 +395,8 @@ async def m_cb(b, cb):
             [
                 [
                     InlineKeyboardButton("⏹", "leave"),
-                    InlineKeyboardButton("⏸", "puse"),
-                    InlineKeyboardButton("▶️", "resume"),
+                    InlineKeyboardButton("▶️", "puse"),
+                    InlineKeyboardButton("⏸", "resume"),
                     InlineKeyboardButton("⏭", "skip"),
                 ],
                 [
@@ -801,15 +801,6 @@ async def ytplay(_, message: Message):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("⏹", "leave"),
-                    InlineKeyboardButton("⏸", "puse"),
-                    InlineKeyboardButton("▶️", "resume"),
-                    InlineKeyboardButton("⏭", "skip"),
-                ],
-                [
-                    InlineKeyboardButton("📖 Daftar putar", "playlist"),
-                ],
-                [
                     InlineKeyboardButton("⚔️ Groups", url="https://t.me/MBsokin"),
                     InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
                 ],
@@ -1044,8 +1035,8 @@ async def lol_cb(b, cb):
             [
                 [
                     InlineKeyboardButton("⏹", "leave"),
-                    InlineKeyboardButton("⏸", "puse"),
-                    InlineKeyboardButton("▶️", "resume"),
+                    InlineKeyboardButton("▶️", "puse"),
+                    InlineKeyboardButton("⏸", "resume"),
                     InlineKeyboardButton("⏭", "skip"),
                 ],
                 [
