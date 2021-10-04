@@ -662,9 +662,6 @@ async def play(_, message: Message):
                     InlineKeyboardButton("⚔️ Groups", url="https://t.me/MBsokin"),
                     InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
                 ],
-                [
-                    InlineKeyboardButton("🐼ᴅɪᴏʀ ʟᴀɢɪ ᴄᴀʀɪ sʟɪᴘᴋᴏʟᴀɴ", url="https://t.me/uurfavboys1"),
-                ],
                 [InlineKeyboardButton(text="🚪 Keluar be lah", callback_data="cls")],
             ]
         )
@@ -750,7 +747,7 @@ async def ytplay(_, message: Message):
                         message.chat.id, "**Gua Join Gc Lu Buat Muterin Lagu Di VCG/OS Yeh Anjing, Jangan Dengerin BD Bangsat!!**"
                     )
                     await lel.edit(
-                        "<b>helper userbot joined your chat</b>",
+                        "<b>**helper assisten gua udah join nyet**</b>",
                     )
 
                 except UserAlreadyParticipant:
@@ -795,7 +792,7 @@ async def ytplay(_, message: Message):
 
     except Exception as e:
         await lel.edit(
-            "**Busehh ga nemu lagunya.** Coba cari dengan judul lagu yang lebih jelas, Ketik `/help` bila butuh bantuan"
+            "**Busehh ga nemu lagunya.** Cari lagu yg bener napa gua juga punya pikiran bgst, Ketik `/help` kalo butuh bantuan"
         )
         print(str(e))
         return
@@ -804,11 +801,17 @@ async def ytplay(_, message: Message):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("⚔️ Groups", url="https://t.me/MBsokin"),
-                    InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
+                    InlineKeyboardButton("⏹", "leave"),
+                    InlineKeyboardButton("⏸", "puse"),
+                    InlineKeyboardButton("▶️", "resume"),
+                    InlineKeyboardButton("⏭", "skip"),
                 ],
                 [
-                    InlineKeyboardButton("🐼ᴅɪᴏʀ ʟᴀɢɪ ᴄᴀʀɪ sʟɪᴘᴋᴏʟᴀɴ", url="https://t.me/uurfavboys1"),
+                    InlineKeyboardButton("📖 Daftar putar", "playlist"),
+                ],
+                [
+                    InlineKeyboardButton("⚔️ Groups", url="https://t.me/MBsokin"),
+                    InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
                 ],
                 [InlineKeyboardButton(text="🚪 Keluar be lah", callback_data="cls")],
             ]
