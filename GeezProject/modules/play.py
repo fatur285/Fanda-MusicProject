@@ -1043,6 +1043,15 @@ async def lol_cb(b, cb):
     keyboard = InlineKeyboardMarkup(
             [
                 [
+                    InlineKeyboardButton("⏹", "leave"),
+                    InlineKeyboardButton("⏸", "puse"),
+                    InlineKeyboardButton("▶️", "resume"),
+                    InlineKeyboardButton("⏭", "skip"),
+                ],
+                [
+                    InlineKeyboardButton("📖 Daftar putar", "playlist"),
+                ],
+                [
                     InlineKeyboardButton("⚔️ Groups", url="https://t.me/MBsokin"),
                     InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
                 ],
