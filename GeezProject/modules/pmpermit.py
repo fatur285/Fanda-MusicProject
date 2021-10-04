@@ -33,7 +33,7 @@ async def pmPermit(client: USER, message: Message):
                 return
             await USER.send_message(
                 message.chat.id,
-            f"**Halo nyet, Gua adalah Layanan Asistant {PROJECT_NAME}.**\n\n **Rules:**\n   - ᴊᴀɴɢᴀɴ sᴘᴀᴍ ᴘᴇsᴀɴ ᴅɪsɪɴɪ\n   - ᴊᴀɴɢᴀɴ sᴘᴀᴍ ʟᴀɢᴜ ʙɪᴀʀ ɢᴀ ᴇʀʀᴏʀ\n   - ᴛᴜᴛᴏʀɪᴀʟ ᴄᴀʀᴀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ LIAT DI: t.me/fandaproject/33 \n\n 👉 **KIRIM LINK INVITE ATAU USERNAME GRUP, KALO ASSISTANT GA BISA JOIN KE GRUP LU.**\n\n ⛑ **Group Support :** @{SUPPORT_GROUP} - **Owner** {OWNER}\n\n",
+            f"**Halo nyet, Gua adalah Layanan Asistant {PROJECT_NAME}.**\n\n **Rules:**\n   - ᴊᴀɴɢᴀɴ sᴘᴀᴍ ᴘᴇsᴀɴ ᴅɪsɪɴɪ\n   - ᴊᴀɴɢᴀɴ sᴘᴀᴍ ʟᴀɢᴜ ʙɪᴀʀ ɢᴀ ᴇʀʀᴏʀ\n   - ᴛᴜᴛᴏʀɪᴀʟ ᴄᴀʀᴀ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ʙᴏᴛ LIAT DI: [TEKEN INI NYET](https://t.me/fandaproject/33) \n\n 👉 **KIRIM LINK INVITE ATAU USERNAME GRUP, KALO ASSISTANT GA BISA JOIN KE GRUP LU.**\n\n ⛑ **Group Support :** @{SUPPORT_GROUP} - **Owner** {OWNER}\n\n",
             )
             return
 
