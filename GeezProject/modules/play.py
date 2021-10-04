@@ -663,7 +663,7 @@ async def play(_, message: Message):
                     InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
                 ],
                 [
-                    InlineKeyboardButton("Dior lagi cari slipkolan", url="https://t.me/uurfavboys1"),
+                    InlineKeyboardButton("🐼ᴅɪᴏʀ ʟᴀɢɪ ᴄᴀʀɪ sʟɪᴘᴋᴏʟᴀɴ", url="https://t.me/uurfavboys1"),
                 ],
                 [InlineKeyboardButton(text="🚪 Keluar be lah", callback_data="cls")],
             ]
@@ -806,6 +806,9 @@ async def ytplay(_, message: Message):
                 [
                     InlineKeyboardButton("⚔️ Groups", url="https://t.me/MBsokin"),
                     InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
+                ],
+                [
+                    InlineKeyboardButton("🐼ᴅɪᴏʀ ʟᴀɢɪ ᴄᴀʀɪ sʟɪᴘᴋᴏʟᴀɴ", url="https://t.me/uurfavboys1"),
                 ],
                 [InlineKeyboardButton(text="🚪 Keluar be lah", callback_data="cls")],
             ]
@@ -1039,6 +1042,9 @@ async def lol_cb(b, cb):
                 [
                     InlineKeyboardButton("⚔️ Groups", url="https://t.me/MBsokin"),
                     InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
+                ],
+                [
+                    InlineKeyboardButton("🐼ᴅɪᴏʀ ʟᴀɢɪ ᴄᴀʀɪ sʟɪᴘᴋᴏʟᴀɴ", url="https://t.me/uurfavboys1"),
                 ],
                 [InlineKeyboardButton(text="🚪 Keluar be lah", callback_data="cls")],
             ]
