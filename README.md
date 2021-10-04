@@ -38,7 +38,7 @@ $ python(3) -m GeezProject
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DIORrios285/Fanda-MusicProject)
 
-Get pyrogram (p)  `SESSION` from here:
+Ambil pyrogram (p)  `SESSION` dari sini:
 [![Run on Repl.it](https://repl.it/badge/github/DIORrios285/PyrogramString)](https://replit.com/@DIORrios285/DIORPyrogramString?lite=1&outputonly=1)
 
 ### Commands for Group 🛠
