@@ -29,16 +29,16 @@ logging.basicConfig(level=logging.INFO)
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""<b>Hallo anak yatim {message.from_user.first_name} Gua {PROJECT_NAME}\n
-Gua adalah Bot Music Group, Yang dapat Muterin Lagu di VCG/OS lu
+Gua adalah Bot Music Group, Yang bisa Muterin Lagu di VCG/OS lu
 Gua Punya Banyak Fitur Seperti :
-• Memutar Musik.
+• Muterin Musik di VCG lu.
 • Mendownload Lagu.
 • Cari lagu yang mau lu Puter atau Download.
 • Pake Perintah » /help « Biar tau fitur lengkapnya
 
 📌 Makasih sebelumnya udh bikin gua : {OWNER}
 
-Mau masukin gua ke gc lu? Masukin gua ke gc lu!
+Mau masukin gua ke gc lu? Masukin aja buru!
 </b>""",
 
 # Edit Yang Seharusnya Lu Edit Aja:D
@@ -168,7 +168,7 @@ async def reload(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "Join gc gua yuk", url=f"https://t.me/MBsokin"
+                        "Join gc gua yuk", url=f"https://t.me/fandaproject"
                     ),
                     InlineKeyboardButton(
                         "yg buat gua", url=f"https://t.me/uurfavboys1"
