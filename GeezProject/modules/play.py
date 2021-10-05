@@ -810,11 +810,8 @@ async def ytplay(_, message: Message):
                     InlineKeyboardButton("📖 Daftar putar", "playlist"),
                 ],
                 [
-                    InlineKeyboardButton("⚔️ Join gc fanda", url="https://t.me/fandasupport"),
-                    InlineKeyboardButton("📢 Channel juga", url="https://t.me/diorplayingwords"),
-                ],
-                [
-                    InlineKeyboardButton("🐼 ᴅɪᴏʀ ʟᴀɢɪ ᴄᴀʀɪ sʟɪᴘᴋᴏʟᴀɴ", url="https://t.me/uurfavboys1"),
+                    InlineKeyboardButton("⚔️ Grup", url="https://t.me/fandasupport"),
+                    InlineKeyboardButton("📢 Chenel", url="https://t.me/diorplayingwords"),
                 ],
                 [InlineKeyboardButton(text="🚪 Keluar be lah", callback_data="cls")],
             ]
@@ -951,7 +948,7 @@ async def deezer(client: Client, message_: Message):
     
     keyboard = InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton(text="📢 Channel", url="https://t.me/fandaproject")],
+            [InlineKeyboardButton(text="📢 Chenel", url="https://t.me/fandaproject")],
         ]
     )
     file_path = await convert(wget.download(url))
@@ -1012,7 +1009,7 @@ async def lol_cb(b, cb):
     if cb.from_user.id != useer_id:
         await cb.answer("Bukan lu yg request jelek!", show_alert=True)
         return
-    await cb.message.edit("⏳ **ngocok bentar**")
+    await cb.message.edit("⏳ **dikit lagi keluar emhh mpshhh...**")
     x=int(x)
     try:
         useer_name = cb.message.reply_to_message.from_user.first_name
@@ -1055,11 +1052,8 @@ async def lol_cb(b, cb):
                     InlineKeyboardButton("📖 Daftar putar", "playlist"),
                 ],
                 [
-                    InlineKeyboardButton("⚔️ Join gc fanda", url="https://t.me/fandasupport"),
-                    InlineKeyboardButton("📢 Channel juga", url="https://t.me/diorplayingwords"),
-                ],
-                [
-                    InlineKeyboardButton("🐼 ᴅɪᴏʀ ʟᴀɢɪ ᴄᴀʀɪ sʟɪᴘᴋᴏʟᴀɴ", url="https://t.me/uurfavboys1"),
+                    InlineKeyboardButton("⚔️ Grup", url="https://t.me/fandasupport"),
+                    InlineKeyboardButton("📢 Chenel", url="https://t.me/diorplayingwords"),
                 ],
                 [InlineKeyboardButton(text="🚪 Keluar be lah", callback_data="cls")],
             ]
