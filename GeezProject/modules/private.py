@@ -163,7 +163,7 @@ async def help(client: Client, message: Message):
     & ~ filters.edited
 )
 async def reload(client: Client, message: Message):
-    await message.reply_text("""✅ Bot **udah dimulai ulang!**\n\n• **Daftar etmin** udah **diperbarui nyet**\n\n• **Anak kontol anak anjing kalo make bot gratisan tuh jangan spam req atau lagu ya bangsat tar bot eror baru lu ngoceh ngoceh ga jelas kontol**""",
+    await message.reply_text("""✅ Bot **udah dimulai ulang!**\n\n• **Daftar etmin udah diperbarui nyet**\n\n• **Anak anjing anak ngentot kalo make bot gratisan tuh jangan spam req atau lagu ya bangsat tar bot eror baru lu ngoceh ngoceh ga jelas kontol**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
