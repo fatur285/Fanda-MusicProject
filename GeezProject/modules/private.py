@@ -163,15 +163,15 @@ async def help(client: Client, message: Message):
     & ~ filters.edited
 )
 async def reload(client: Client, message: Message):
-    await message.reply_text("""✅ Bot **udah dimulai ulang!**\n\n• **Daftar etmin udah diperbarui nyet**\n\n• **Anak anjing anak ngentot kalo make bot gratisan tuh jangan spam req atau lagu ya bangsat tar bot eror baru lu ngoceh ngoceh ga jelas kontol**""",
+    await message.reply_text("""✅ Bot **udah dimulai ulang!**\n\n• **Daftar etmin** udah **di perbarui y nyet**\n\n• **Jangan spam req atau lagu sayang...fanda udah tobat ga entoksis lagi** 😁\n\n• Cuman mau bilang **Dior** ganteng.""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Join gc gua yuk", url=f"https://t.me/fandaproject"
+                        "Join gc gua", url=f"https://t.me/fandaproject"
                     ),
                     InlineKeyboardButton(
-                        "yg buat gua", url=f"https://t.me/uurfavboys1"
+                        "DIOR", url=f"https://t.me/uurfavboys1"
                     )
                 ]
             ]
