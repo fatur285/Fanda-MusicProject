@@ -56,7 +56,13 @@ Mau make gua buat muterin lagu di gc lu? Pake aja, gua gratis buat warga telegra
                         "⚔️ Group Support", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
                     InlineKeyboardButton(
+
+                        "💌 Instagram", url=f"https://instagram.com/fatur.285")
+
+                ],[
+                    InlineKeyboardButton(
                         "🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")
+                ],[
                     InlineKeyboardButton(
                         "💌 Instagram", url=f"https://instagram.com/fatur.285")
                 ],[
