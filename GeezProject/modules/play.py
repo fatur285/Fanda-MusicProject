@@ -650,7 +650,7 @@ async def play(_, message: Message):
 
             except Exception as e:
                 await lel.edit(
-                "**Busehh ga nemu lagunya.** Cari lagu tuh yang bener lah ngentot, Ketik `/help` bila butuh bantuan"
+                "**Busehh ga nemu lagunya.** Cari lagu tuh yang bener lah ngentot, Ketik `/help` kalo butuh bantuan"
             )
                 print(str(e))
                 return
@@ -699,7 +699,7 @@ async def play(_, message: Message):
             return
         await message.reply_photo(
             photo="final.png",
-            caption = f"🏷 **Judul:** [{title[:30]}]({url})\n🕒 **Durasi:** {duration}\n💡 **Status:** Lagi muterin lagu\n" \
+            caption = f"🏷 **Judul:** [{title[:30]}]({url})\n🕒 **Durasi:** {duration}\n💡 **Status:** Lagi muter\n" \
                     + f"🎵 **Permintaan si kontol ini:** {message.from_user.mention}",
                    reply_markup=keyboard)
 
@@ -801,8 +801,20 @@ async def ytplay(_, message: Message):
     keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("⚔️ Groups", url="https://t.me/fandasupport"),
-                    InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
+                    InlineKeyboardButton("▢", "leave"),
+                    InlineKeyboardButton("▷", "puse"),
+                    InlineKeyboardButton("II", "resume"),
+                    InlineKeyboardButton("▷▷", "skip"),
+                ],
+                [
+                    InlineKeyboardButton("📖 Daftar putar", "playlist"),
+                ],
+                [
+                    InlineKeyboardButton("⚔️ Join gc fanda", url="https://t.me/fandasupport"),
+                    InlineKeyboardButton("📢 Channel juga", url="https://t.me/diorplayingwords"),
+                ],
+                [
+                    InlineKeyboardButton("🐼 ᴅɪᴏʀ ʟᴀɢɪ ᴄᴀʀɪ sʟɪᴘᴋᴏʟᴀɴ", url="https://t.me/uurfavboys1"),
                 ],
                 [InlineKeyboardButton(text="🚪 Keluar be lah", callback_data="cls")],
             ]
@@ -1043,8 +1055,8 @@ async def lol_cb(b, cb):
                     InlineKeyboardButton("📖 Daftar putar", "playlist"),
                 ],
                 [
-                    InlineKeyboardButton("⚔️ Groups", url="https://t.me/fandasupport"),
-                    InlineKeyboardButton("📢 Channel", url="https://t.me/diorplayingwords"),
+                    InlineKeyboardButton("⚔️ Join gc fanda", url="https://t.me/fandasupport"),
+                    InlineKeyboardButton("📢 Channel juga", url="https://t.me/diorplayingwords"),
                 ],
                 [
                     InlineKeyboardButton("🐼 ᴅɪᴏʀ ʟᴀɢɪ ᴄᴀʀɪ sʟɪᴘᴋᴏʟᴀɴ", url="https://t.me/uurfavboys1"),
