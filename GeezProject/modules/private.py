@@ -28,17 +28,17 @@ logging.basicConfig(level=logging.INFO)
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>Hallo anak yatim {message.from_user.first_name} Gua {PROJECT_NAME}\n
-Gua adalah Bot Music Group, Yang bisa Muterin Lagu di VCG/OS lu
+        f"""<b>Hallo anak yatim **{message.from_user.first_name}**\n
+Kenalin gua {PROJECT_NAME}, Gua bisa Muterin Lagu di VCG/OS lu
 Gua Punya Banyak Fitur Seperti :
 • Muterin Musik di VCG lu.
 • Mendownload Lagu.
 • Cari lagu yang mau lu Puter atau Download.
 • Pake Perintah » /help « Biar tau fitur lengkapnya
 
-📌 Makasih sebelumnya udh bikin gua : {OWNER}
+📌 Makasih udh bikin gua : {OWNER}
 
-Mau masukin gua ke gc lu? Masukin aja buru!
+Mau make gua buat muterin lagu di gc lu? Pake aja, gua gratis buat warga telegram!
 </b>""",
 
 # Edit Yang Seharusnya Lu Edit Aja:D
@@ -57,6 +57,8 @@ Mau masukin gua ke gc lu? Masukin aja buru!
                 ],[
                     InlineKeyboardButton(
                         "🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")
+                    InlineKeyboardButton(
+                        "💌 Instagram", url=f"https://instagram.com/fatur.285")
                 ],[
                     InlineKeyboardButton(
                         "💳 Donasi", url=f"https://t.me/uurfavboys1")
