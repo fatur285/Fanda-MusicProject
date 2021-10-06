@@ -807,13 +807,13 @@ async def ytplay(_, message: Message):
                     InlineKeyboardButton("▷▷", "skip"),
                 ],
                 [
-                    InlineKeyboardButton("📖 Daftar putar", "playlist"),
+                    InlineKeyboardButton("📖 ᴅᴀꜰᴛᴀʀ ᴘᴜᴛᴀʀ", "playlist"),
                 ],
                 [
-                    InlineKeyboardButton("⚔️ Grup", url="https://t.me/fandasupport"),
-                    InlineKeyboardButton("📢 Chenel", url="https://t.me/diorplayingwords"),
+                    InlineKeyboardButton("⚔️ ɢʀᴜᴘ", url="https://t.me/fandasupport"),
+                    InlineKeyboardButton("📢 ᴄʜᴇɴᴇʟ", url="https://t.me/diorplayingwords"),
                 ],
-                [InlineKeyboardButton(text="🚪 Keluar be lah", callback_data="cls")],
+                [InlineKeyboardButton(text="🚪 ᴋᴇʟᴜᴀʀ ʙᴇ ʟᴀʜ", callback_data="cls")],
             ]
         )
     requested_by = message.from_user.first_name
@@ -1049,13 +1049,13 @@ async def lol_cb(b, cb):
                     InlineKeyboardButton("▷▷", "skip"),
                 ],
                 [
-                    InlineKeyboardButton("📖 Daftar putar", "playlist"),
+                    InlineKeyboardButton("📖 ᴅᴀꜰᴛᴀʀ ᴘᴜᴛᴀʀ", "playlist"),
                 ],
                 [
-                    InlineKeyboardButton("⚔️ Grup", url="https://t.me/fandasupport"),
-                    InlineKeyboardButton("📢 Chenel", url="https://t.me/diorplayingwords"),
+                    InlineKeyboardButton("⚔️ ɢʀᴜᴘ", url="https://t.me/fandasupport"),
+                    InlineKeyboardButton("📢 ᴄʜᴇɴᴇʟ", url="https://t.me/diorplayingwords"),
                 ],
-                [InlineKeyboardButton(text="🚪 Keluar be lah", callback_data="cls")],
+                [InlineKeyboardButton(text="🚪 ᴋᴇʟᴜᴀʀ ʙᴇ ʟᴀʜ", callback_data="cls")],
             ]
         )
     requested_by = useer_name
