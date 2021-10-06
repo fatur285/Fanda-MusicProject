@@ -28,17 +28,22 @@ logging.basicConfig(level=logging.INFO)
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>Hallo anak yatim **{message.from_user.first_name}**\n
-Kenalin gua {PROJECT_NAME}, Gua bisa Muterin Lagu di VCG/OS lu
-Gua Punya Banyak Fitur Seperti :
-• Muterin Musik di VCG lu.
-• Mendownload Lagu.
-• Cari lagu yang mau lu Puter atau Download.
-• Pake Perintah » /help « Biar tau fitur lengkapnya
+        f"""<b>ʜᴀʟʟᴏ ᴀɴᴀᴋ ʏᴀᴛɪᴍ **{message.from_user.first_name}**\n
+ᴋᴇɴᴀʟɪɴ ɢᴜᴀ {PROJECT_NAME}, ɢᴜᴀ ʙɪsᴀ ᴍᴜᴛᴇʀɪɴ ʟᴀɢᴜ ᴅɪ ᴠᴄɢ ʟᴜ,
+ɢᴜᴀ ᴘᴜɴʏᴀ ʙᴀɴʏᴀᴋ ꜰɪᴛᴜʀ sᴇᴘᴇʀᴛɪ:
+╔════════════════════════════════════╗
+ • ᴍᴜᴛᴇʀɪɴ ᴍᴜsɪᴋ ᴅɪ ᴠᴄɢ ʟᴜ
+ • ᴅᴏᴡɴʟᴏᴀᴅ ʟᴀɢᴜ ʏᴀɴɢ ʟᴜ ᴍᴀᴜ
+ • ᴄᴀʀɪ ʙᴇʀʙᴀɢᴀɪ ᴍᴀᴄᴀᴍ ʟᴀɢᴜ ᴅɪ sᴇʟᴜʀᴜʜ ᴘᴇɴᴊᴜʀᴜ ᴅᴜɴɪᴀ
+ • ᴅᴀɴ ʙᴀɴʏᴀᴋ ʟᴀɢɪ.
+╚════════════════════════════════════╝
+ᴘᴀᴋᴇ ᴘᴇʀɪɴᴛᴀʜ » /help « ʙɪᴀʀ ᴛᴀᴜ ꜰɪᴛᴜʀ ʟᴇɴɢᴋᴀᴘɴʏᴀ!
 
-📌 Makasih udh bikin gua : {OWNER}
+┏━━━━━━━━━━━━━❂❂━━━━━━━━━━━━━┓
+ 📌 Makasih udh bikin gua : {OWNER}
+┗━━━━━━━━━━━━━❂❂━━━━━━━━━━━━━┛
 
-Mau make gua buat muterin lagu di gc lu? Pake aja, gua gratis buat warga telegram!
+𝙼𝚊𝚞 𝚖𝚊𝚔𝚎 𝚐𝚞𝚊 𝚋𝚞𝚊𝚝 𝚖𝚞𝚝𝚎𝚛𝚒𝚗 𝚕𝚊𝚐𝚞 𝚍𝚒 𝚐𝚌 𝚕𝚞? 𝙿𝚊𝚔𝚎 𝚊𝚓𝚊, 𝚐𝚞𝚊 𝚐𝚛𝚊𝚝𝚒𝚜 𝚋𝚞𝚊𝚝 𝚠𝚊𝚛𝚐𝚊 𝚝𝚎𝚕𝚎𝚐𝚛𝚊𝚖!
 </b>""",
 
 # Edit Yang Seharusnya Lu Edit Aja:D
@@ -48,21 +53,21 @@ Mau make gua buat muterin lagu di gc lu? Pake aja, gua gratis buat warga telegra
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Masukin gua ke gc lu ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+                        "➕ ᴍᴀsᴜᴋɪɴ ɢᴜᴀ ᴋᴇ ɢᴄ ʟᴜ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
                 [
                     InlineKeyboardButton(
-                        "📢 Channel informasi", url=f"https://t.me/{UPDATES_CHANNEL}"), 
+                        "📢 ᴄʜᴀɴɴᴇʟ ɪɴꜰᴏʀᴍᴀsɪ", url=f"https://t.me/{UPDATES_CHANNEL}"), 
                     InlineKeyboardButton(
-                        "⚔️ Group Support", url=f"https://t.me/{SUPPORT_GROUP}")
+                        "⚔️ ɢʀᴏᴜᴘs sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}")
                 ],[
                     InlineKeyboardButton(
-                        "💌 Instagram", url=f"https://instagram.com/fatur.285")
+                        "💌 ɪɴsᴛᴀɢʀᴀᴍ", url=f"https://instagram.com/fatur.285")
                 ],[
                     InlineKeyboardButton(
-                        "🛠 Source Code 🛠", url=f"https://{SOURCE_CODE}")
+                        "🛠 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 🛠", url=f"https://{SOURCE_CODE}")
                 ],[
                     InlineKeyboardButton(
-                        "💳 Donasi", url=f"https://t.me/uurfavboys1")
+                        "💳 ᴅᴏɴᴀsɪ", url=f"https://t.me/uurfavboys1")
                 ]
             ]
         ),
@@ -101,10 +106,10 @@ def map(pos):
     elif(pos==len(tr.HELP_MSG)-1):
         url = f"https://t.me/{SUPPORT_GROUP}"
         button = [
-            [InlineKeyboardButton("➕ Masukin gua ke gc lu ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
-            [InlineKeyboardButton(text = '📢 Channel informasi', url=f"https://t.me/{UPDATES_CHANNEL}"),
-             InlineKeyboardButton(text = '⚔️ Group Support', url=f"https://t.me/{SUPPORT_GROUP}")],
-            [InlineKeyboardButton(text = '🛠 Source Code 🛠', url=f"https://{SOURCE_CODE}")],
+            [InlineKeyboardButton("➕ ᴍᴀsᴜᴋɪɴ ɢᴜᴀ ᴋᴇ ɢᴄ ʟᴜ ➕", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")],
+            [InlineKeyboardButton(text = '📢 ᴄʜᴀɴɴᴇʟ ɪɴꜰᴏʀᴍᴀsɪ', url=f"https://t.me/{UPDATES_CHANNEL}"),
+             InlineKeyboardButton(text = '⚔️ ɢʀᴏᴜᴘ sᴜᴘᴘᴏʀᴛ', url=f"https://t.me/{SUPPORT_GROUP}")],
+            [InlineKeyboardButton(text = '🛠 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ 🛠', url=f"https://{SOURCE_CODE}")],
             [InlineKeyboardButton(text = '«', callback_data = f"help+{pos-1}")]
         ]
     else:
@@ -147,12 +152,12 @@ async def start(client: Client, message: Message):
 )
 async def help(client: Client, message: Message):
     await message.reply_text(
-        """**Teken tombol di bawah ini biar lu tau cara make gua**""",
+        """**ᴛᴇᴋᴇɴ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ɪɴɪ ʙɪᴀʀ ʟᴜ ᴛᴀᴜ ᴄᴀʀᴀ ᴍᴀᴋᴇ ɢᴜᴀ**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "📜 Cara make gua 📜", url="https://telegra.ph/CCARA-PAKE-FANDA-MUSIC-BOT-09-30"
+                        "📜 ᴄᴀʀᴀ ᴍᴀᴋᴇ ɢᴜᴀ 📜", url="https://telegra.ph/CCARA-PAKE-FANDA-MUSIC-BOT-09-30"
                     )
                 ]
             ]
@@ -166,15 +171,15 @@ async def help(client: Client, message: Message):
     & ~ filters.edited
 )
 async def reload(client: Client, message: Message):
-    await message.reply_text("""✅ Bot **udah dimulai ulang!**\n\n• **Daftar etmin** udah **di perbarui y nyet**\n\n• **Jangan spam req atau lagu sayang...fanda udah tobat ga entoksis lagi** 😁\n\n• Cuman mau bilang **Dior** ganteng.""",
+    await message.reply_text("""✅ Bot **udah dimulai ulang!**\n\n• **Daftar etmin** udah **di perbarui y nyet**\n\n• ᴊᴀɴɢᴀɴ sᴘᴀᴍ ʀᴇǫ ᴀᴛᴀᴜ ʟᴀɢᴜ sᴀʏᴀɴɢ... ꜰᴀɴᴅᴀ ᴜᴅᴀʜ ᴛᴏʙᴀᴛ ɢᴀ ᴇɴᴛᴏᴋsɪs ʟᴀɢɪ 😁\n\n• ᴄᴜᴍᴀɴ ᴍᴀᴜ ʙɪʟᴀɴɢ **Dior** ɢᴀɴᴛᴇɴɢ.""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "Join gc gua", url=f"https://t.me/fandaproject"
+                        "ᴊᴏɪɴ ɢᴄ ɢᴜᴀ", url=f"https://t.me/fandaproject"
                     ),
                     InlineKeyboardButton(
-                        "DIOR", url=f"https://t.me/uurfavboys1"
+                        "ᴛᴜᴀɴ ᴅɪᴏʀ", url=f"https://t.me/uurfavboys1"
                     )
                 ]
             ]
